@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url(../asuntoslink/scroll.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*margin top del mani*/
+.main-top{
+    padding-top: 7%;
+}
+
+   /* Estilo principal para el contenedor */
+   .slider-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    overflow: hidden;
+  }
+
+  /* Imágenes del slider */
+  .slider-image {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 3s ease, filter 3s ease; /* Transiciones suaves */
+  }
+
+  /* Para la segunda imagen, que está oculta inicialmente */
+  .slider-image.hidden {
+    opacity: 0;
+    filter: blur(10px); /* Difumina la imagen inicialmente */
+  }
+
+  /* Contenido que aparece sobre las imágenes */
+  .slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10; /* Para que el contenido esté por encima de las imágenes */
+    text-align: center;
+  }
+/*tamaño de los link del navbar*/
+
+.navbar-nav .nav-link {
+    padding: 0;
+    margin: 0;
+    font-size: 18px; 
+}
+.color-bg-navbar{
+    top: 10%;
+    background-color: brown;
+}
+
+/*main*/
+
+/*Dropdown de opciones de los tomos*/
+
+
+.drop-none-block div{
+    width: 100%;
+    img{
+        display: none;
+        width: 450px;
+    }
+}
+
+.drop-none-block:hover div img{
+    display: block;
+    position: absolute;
+    left: 500px;
+}
+
+.color-drop{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 45%);
+    border: 0;
+    background-image: linear-gradient(150deg,
+    #9500ff,
+    #09f,
+    #00ddff);
+    border-radius: 8px;
+}
+.image-container {
+    position: absolute;
+    right: 30%;
+    top: 10%;
+}
+
+.image-container img {
+    width: 500px;
+    display: none;
+}
+/*margin top carousel*/
+
+.top-carousel{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 10%;
+}
+
+/*imagen carousel*/
+
+.imagen-carousel{
+    width: 35%;
+}
+
+
+
+
+.borde1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.borde1:hover .informacion{
+    display: block;
+}
+
+.borde1:hover div a{
+    display: block;
+    border-left: 1px solid rgb(222, 213, 213);
+    border-radius: -24px;
+   
+}
+
+.borde1 div a:hover p{
+    padding-left: 12%;
+    color: white;
+    background-color: cadetblue;
+}
+
+.borde1 div p{
+    transition: all .5s;
+    padding: 3%;
+}
+
+.borde1 .bde{
+    border-bottom: 2px solid black;
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+}
+
+.informacion{
+    display: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgb(36, 123, 141) 45%);
+    position: fixed;
+    width: 20%;
+    height: 300px;
+    top: 10%;
+    right: 0;
+    transition: all 1s;
+    overflow: auto;
+}
+.informacion:hover{
+    
+    height: 300px;
+}
+.informacion div{
+    overflow: hidden;
+    max-height: 100%;
+    width: calc(90% + 18px);
+}
+.informacion::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+.informacion div a{
+    width: 100%;
+    border: 1px solid rgb(62, 62, 55);
+    text-align: center;
+    color: white;
+}
+.informacion div:hover a{
+    background-color: black;
+    color: white;
+}
+.informacion p{
+    color: white;
+    padding: 1%;
+    margin: 2% 5px 2% 0;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+
+.informacion:hover span{
+    color: red;
+}
+.informacion strong{
+    border-bottom: 1px solid darkblue;
+    color: white;
+}
+.informacion:hover div p strong{
+    border-bottom: 1px solid white;
+    
+}
+ 
+
+
+/*espacio para chatear*/
+
+.talk_me{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    width: 8%;
+    transition: all .8s;
+    z-index: 2000;
+}
+
+.talk_me form{
+    display: none;
+}
+
+.talk_me:hover form{
+    display: block;
+    float: right;
+}
+
+.talk_me p{
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    color: rgb(247, 247, 247);
+    border: 1px solid black;
+    background-color: rgb(33, 200, 33);
+    border-radius: 24px;
+}
+
+/*------------------*/
+.img_tomos{
+    position: absolute;
+    padding-top: 0;
+   
+    width: 100%;
+}
+.img_tomos div nav{
+    margin-top: 5%;
+    margin-left: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    transition: all .8s;
+}
+.titulo_tomos h3{
+    width: 40%;
+    opacity: .8;
+    font-size: 2.5em;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+    text-shadow: 5px 4px 5px rgb(11, 11, 11);
+    transition: all 2s;
+}
+.titulo_tomos h3:hover{
+    width: 100%;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.342);
+    background-color: rgba(0, 255, 255, 0.071);
+}
+.titulo_tomos p{
+    transition: all .8s;
+    display: none;
+}
+.titulo_tomos:hover p{
+    transition: .8s;
+    display: block;
+    opacity: .6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 20%;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+.titulo_tomos p span{
+    color: rgb(229, 218, 218);
+    border-left: 6px solid rgb(142, 80, 80);
+    border-right: 6px solid rgb(142, 80, 80);
+    border-radius: 24px;
+}
+.img_tomos div nav a h4{
+    display: none;
+    transition: all .5s;
+}
+.img_tomos div nav a:hover h4{
+    text-transform: uppercase;
+    display: block;
+    float: right;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    border-left: 8px solid rgb(42, 161, 165);
+    border-radius: 50%;
+    padding: 1%;
+}
+/*encabezado principal opciones navegador*/
+
+.encabezado_1ro{ 
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    z-index: 3000;
+    background-color: white;
+    height: 10%;
+}
+
+
+.encabezado_1ro h4{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.encabezado_1ro h6{
+    margin-top: 2%;
+    text-align: center;
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: brown;
+}
+.encabezado_1ro div{
+    position: absolute;
+    background-color: rgb(162, 192, 193);
+    color: aliceblue;
+    right: 8px;
+    top: 6px;
+}
+
+.encabezado{
+    z-index: 5000;
+}
+
+.encabezado:hover{
+    background-color: black;
+}
+
+.encabezado ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    z-index: 2000;
+}
+
+.encabezado ul li{
+    color: white;
+    list-style-type: none;
+}
+
+.tamaño-img img{
+    width: 15%;
+}
+
+.encabezado ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.encabezado ul li a p{
+    border-left: 1px solid white;
+    transition: all .5s;
+    padding: 4%;
+}
+
+.encabezado ul li:hover a p{
+    width: 100%;
+    background-color: brown;
+}
+
+.encabezado ul li input{
+    background-color: antiquewhite;
+}
+/*logo principal*/
+
+.logolegislatura{
+    position: fixed;
+    top: 0;
+    left: 1%;
+    z-index: 3000;
+}
+
+.logolegislatura img{
+    width: 50%;
+    opacity: .4;
+}
+.logolegislatura img:hover{
+    opacity: 2;
+    transition: all .8s;
+}
+
+/*imagenes */
+
+picture{
+    position: fixed;
+    top: 4%;
+    width: 100%;
+    z-index: 3000;
+}
+
+.imagenprincipal{
+    position: fixed;
+    width: 100%;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+   
+}
+
+.imagenprincipal img{
+    width: 100%;
+    z-index: 1000;
+}
+
+.fondocolor{
+    position: absolute;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 45%);
+    top: 60%;
+    width: 100%;
+    transition: all .5s;
+}
+
+
+.cuadrotomo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.cuadrotomo div{
+    opacity: .7;
+    background-image: url(/imagenescudo/booksantique.jpg);
+    background-size: cover;
+    padding: 3%;
+    margin: 5%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 1px 20px rgb(87, 142, 190);
+    z-index: 3000;
+    margin-bottom: 20%;
+    transition: all .10s;
+}
+
+.cuadrotomo div:hover{
+    background-image: url(/imagenescudo/laptop.jpg);
+    transition: all .5s;
+    opacity: .8;
+    background-color: rgb(147, 217, 220);
+    border-left: 3px solid red;
+    border-top:  1px solid red;
+}
+
+.cuadrotomo div a {
+    color: rgb(255, 200, 0);
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    margin: 20%;
+    padding: 20%;
+    font-size: .8em; 
+}
+
+.cuadrotomo div a h3{
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    padding: 10%;
+    font-size: 1.1em;
+}
+
+.imagenprincipal img{
+    width: 40%;
+}
+
+/*---------------------------------------------------------*/
+
+.primerpie_pag {
+    /*background-color: rgba(255, 255, 0, 0.201);
+    position: absolute;
+    bottom: 0;
+    width: 100%;*/
+
+    height: 8rem;
+    z-index: 4000;
+    transition: all .8s;
+    padding: 0;
+}
+
+.primerpie_pag ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    transition: all .8s;
+}
+
+.primerpie_pag:hover{
+    transition: all .5s;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 4%, rgba(9,9,121,1) 90%, rgba(2,0,36,1) 100%);
+    height: 10rem;
+}
+
+.primerpie_pag ul li{
+    width: 50%;
+    transition: all .8s;
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-left: 5%;
+    margin-top: 4px;
+}
+
+.primerpie_pag ul li:hover{
+    padding-left: 20%;
+    border-bottom: 2px solid rgb(171, 37, 37); 
+} 
+
+.primerpie_pag ul li a{
+    text-decoration: none;
+    color: black;
+}
+.primerpie_pag ul li a i{
+    font-size: 1.5em;
+}
+/*--------------------*/
+.segunpie_pag{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.784);
+    transition: all .6s;
+}
+
+.segunpie_pag:hover{
+    background-color: black;
+}
+
+.segunpie_pag ul li a{
+    color: rgba(255, 255, 0, 0.718);
+    text-decoration: none;
+}
+
+.segunpie_pag ul h4{
+    color: white;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+.segunpie_pag ul li{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.segunpie_pag ul{
+    list-style: none;
+}
+
+/************************/
+
+.tercerpie_pag{
+    margin-bottom: 0;
+    background-color: azure;
+    padding: 3%;
+    text-align: center;
+}
+.tercerpie_pag a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  /*  .encabezado ul{
+        flex-direction: column;
+    }
+    .encabezado ul li{
+        border-left: none;
+        border-bottom: 1px solid white;
+    }*/
+    .fondocolor{
+        top: 35%;
+    }
+    .cuadrotomo{
+        margin-top: 4%;
+    }
+    .cuadrotomo div a{
+        font-size: .5em;
+    }
+    .imagenprincipal{
+        top: 24%;
+    }
+    .logolegislatura img{
+        width: 50%;
+    }
+    .img_tomos{
+        padding-top: 30%;
+        border: 0;
+    }
+    .titulo_tomos h3{
+        display: none;
+    }
+    .img_tomos p{
+        font-size: 1.2em;
+    }
+    .titulo_tomos p{
+        margin-top: 2%;
+        font-size: .8em;
+    }
+    .nav_var nav a button span img{
+        top: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .titulo_tomos p{
+        top: 15%;
+        font-size: 1em;
+    }
+    .img_tomos{
+        padding-top: 15%;
+    }
+    .nav_var nav a button span img{
+        top: 30%;
+    }
+}

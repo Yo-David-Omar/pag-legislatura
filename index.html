@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyboard" content="">
+    <title>TOMOS LEGISLATURA 115 PL</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+
+    <!------------------------------->
+    <div class="talk_me">
+        <p><i class="bi bi-whatsapp"></i></p>
+        <form action="https://formspree.io/f/mwkajgrr" method="POST" id="myForm">
+          <textarea name="message" id="area" cols="40" rows="4" minlength="5" maxlength="200"></textarea>
+          <button type="submit" id="submitButton" disabled>Enviar</button>
+          <p id="feedbackMessage" class="message"></p>
+      </form>
+    </div>
+        <!--<form action="">
+            <textarea name="area" cols="40" rows="4" minlength="5" maxlength="200" >escribe aqui...</textarea>
+            <button>enviar</button>
+        </form>
+    </div>-->
+    <section class="encabezado"></section>
+<!--encabezado principal fijo -->
+<div class="container-fluid bg-light position-fixed">
+  <div class="row text-center text-md-start">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tamaño-img mt-2">
+      <img src="./imagenescudo/hlegislatura.png" alt="imagen Honorable Legislatura">
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-3">
+      <h4>HONORABLE LEGISLATURA DE TUCUMÁN</h4>
+    </div>
+    
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-3" id="clock">
+      
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light color-bg-navbar position-fixed w-100 z-3">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100 d-flex justify-content-between">
+              <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Sesiones</a>
+              <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Noticias</a>
+              <a class="nav-link active flex-fill text-center text-light" href="https://www.google.com/maps/place/Honorable+Legislatura+de+Tucum%C3%A1n/@-26.8177276,-65.2027659,2381m/data=!3m1!1e3!4m6!3m5!1s0x94225c3cddb2fff3:0x8c2825d9051ad953!8m2!3d-26.8177276!4d-65.2027659!16s%2Fg%2F1tf66kl7?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ubicación</a>
+              <a class="nav-link active flex-fill text-center text-light" href="#">Resumen</a>
+            
+                <!--boton modal -->
+<div class="text-center">
+<button type="button" class="btn btn-primary bg-primary-subtle text-dark fs-6" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    ¿QUÉ ES UN PERÍODO LEGISLATIVO?
+  </button>
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="true" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body size-modal bg-primary-subtle text-dark">
+          ...<h4><strong>PERÍODO LEGISLATIVO</strong></h4>
+          <h5>Se denomina así a la Actividad Legislativa durante Un Año, desde el 01/03 <em>(Art. 52 de la Constitución)</em> al 28/02 del próximo año.</h5>
+          <h5>Esta PÁGINA WEB del DIARIO DE SESIONES abarca la información de cada uno de los Períodos Legislativos e incluye gráficos, sonidos, videos y fotos. </h5>
+            <h5>De un promedio de 4500 páginas de papel, suma de los Diarios de Sesiones e información complementaria para un (1) Período Legislativo, que los usuarios debían consultar en 4 ó 5 Tomos, ahora lo pueden hacer a través de <strong>un simple clickeo,</strong> con un navegador web pudiendo interactuar e informarse. <h5>
+            <h5><ins>El PODER LEGISLATIVO</ins> comprende desde sus Diarios de Sesiones, Autoridades, Legisladores, Bloques Políticos, Comisiones, para continuar con el Índice Temático, Nomenclador, Cuadro de Leyes y Vetos del Poder Ejecutivo.</h5>
+            
+           
+
+            <h5>Del esencial <strong>Diario de Sesiones</strong> surge también la información del: </h5>
+            <h5><ins>PODER EJECUTIVO Y PODER JUDICIAL.</ins><br> Principalmente las Autoridades, Mandatos y Estructuras de los organismos.</h5>
+            <a href="../opciones/nuevo.html"><h4>Ver Resumen en Gráfico ▼</h4></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar ventana</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    </section>
+
+
+<main class="vh-100 main-top">
+  <div class="slider-container vh-100">
+    
+    <img src="./imagenescudo/Mural_Independencia_Tucuman.jpg" class="slider-image" id="image1" alt="Imagen 1">
+    
+    <img src="./imagenescudo/sueñosconcretados1.jpg" class="slider-image hidden" id="image2" alt="Imagen 2">
+
+    <div class="slider-content d-none d-lg-block">
+      <h1>Bienvenidos a la Página Inicial</h1>
+      <p>Este es el mensaje sobre las imágenes de fondo.</p>
+    </div>
+  </div>
+
+    <div class="img_tomos p-5">
+        <div class="titulo_tomos">
+            <h3>Períodos <br> Legislativos</h3>
+    </div>
+    
+
+<div class="drop-tomos p-5 text-center text-md-start">
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img120')">
+       Período 120
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img119')">
+       Período 119
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img118')">
+       Período 118
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img117')">
+       Período 117
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img116')">
+       Período 116
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="#">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="#">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="#">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="#">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="#">Inicio</a></li>
+      </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img115')">
+       Período 115
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item" href="../legisladores/autoridades.html">Autoridades</a></li>
+        <li><a class="dropdown-item" href="../informacion/indicetematico.html">Índice Temático</a></li>
+        <li><a class="dropdown-item" href="../informacion/nomenclador.html">Nomenclador</a></li>
+        <li><a class="dropdown-item" href="../informacion/cuadroleyes.html">Cuadro de Leyes</a></li>
+        <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Diario de Sesiones</a></li>
+        <li><a class="dropdown-item" href="../asuntoslink/buscadorasuntos.html">Cuadro Asuntos</a></li>
+        <li><a class="dropdown-item" href="../ainicio/inicio.html">Inicio</a></li>
+    </ul>
+  </div>
+
+  <div class="dropdown m-3">
+      <a class="btn btn-secondary dropdown-toggle color-drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="showImage('img114')">
+       Período 114
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="../legisladores/autoridades.html">Autoridades</a></li>
+          <li><a class="dropdown-item" href="../informacion/indicetematico.html">Índice Temático</a></li>
+          <li><a class="dropdown-item" href="../informacion/nomenclador.html">Nomenclador</a></li>
+          <li><a class="dropdown-item" href="../informacion/cuadrodeleyes.html">Cuadro de Leyes</a></li>
+          <li><a class="dropdown-item" href="../diariosesiones/cuadrosesiones.html">Diario de Sesiones</a></li>
+          <li><a class="dropdown-item" href="../diariosesiones/buscadorasuntos.html">Cuadro Asuntos</a></li>
+          <li><a class="dropdown-item" href="../ainicio/inicio.html">Inicio</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="image-container d-none d-lg-block">
+  <img id="img120" src="../imagenescudo/librotomo113.png" alt="Imagen Período 120">
+  <img id="img119" src="../imagenescudo/librotomo119.png" alt="Imagen Período 119">
+  <img id="img118" src="../imagenescudo/librotomo118.png" alt="Imagen Período 118">
+  <img id="img117" src="../imagenescudo/librotomo117.png" alt="Imagen Período 117">
+  <img id="img116" src="../imagenescudo/librotomo116.png" alt="Imagen Período 116">
+  <img id="img115" src="../imagenescudo/librotomo115.png" alt="Imagen Período 115">
+  <img id="img114" src="../imagenescudo/librotomo114.png" alt="Imagen Período 114">
+</div>
+</main>
+
+<div class="position-relative ">
+       <footer class="primerpie_pag mt-5 ">
+        <ul>
+            <li><a href="https://www.instagram.com/legislaturatucuman?igsh=MTJ2cm1ubG9heXozOA"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61552602646020"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://x.com/LegislaturaT?t=iHA1doB8nLAUovEn8SL4Q&s=09"><i class="bi bi-twitter-x"></i></a></li>
+            <li><a href="https://wa.me/5493816114185" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCAAEMVW-oPg4FnIYBNfjVCQ" target="_blank"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+
+     </footer>
+     <div class="container-fluid segunpie_pag">
+      <div class="row w-100">
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+          <ul>
+            <h4>Mandatos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Sección Electoral</a></li>
+            <li><a href="#">Departamentos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#">Artículo 43</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+          <ul>
+            <h4>Bloques Políticos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Períodos</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+          <ul>
+            <h4>Comisiones</h4>
+            <li><a href="#">Permanentes</a></li>
+            <li><a href="#">Interpoderes</a></li>
+            <li><a href="#">Especiales</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+          <ul>
+            <h4>Constitución Provincial</h4>
+            <li><a href="#">Leyes</a></li>
+            <li><a href="#">Vetos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+     <!--<footer class="segunpie_pag">
+        <ul>
+            <h4>Mandatos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Sección Electoral</a></li>
+            <li><a href="#">Departamentos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#">Artículo 43</a></li>
+        </ul>
+        <ul>
+            <h4>Bloques Políticos</h4>
+            <li><a href="#">Acerca de...</a></li>
+            <li><a href="#">Períodos</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul>
+            <h4>Comisiones</h4>
+            <li><a href="#">Permanentes</a></li>
+            <li><a href="#">Interpoderes</a></li>
+            <li><a href="#">Especiales</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul>
+            <h4>Constitución Provincial</h4>
+            <li><a href="#">Leyes</a></li>
+            <li><a href="#">Vetos</a></li>
+            <li><a href="#">Legisladores</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+     </footer>-->
+     <footer class="tercerpie_pag">
+        <a href="#">&copy;Estrategias_Páginas_JD</a>
+     </footer>
+    </div>
+    
+ <script src="index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
