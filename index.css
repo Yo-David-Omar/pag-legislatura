@@ -10,6 +10,10 @@
 .main-top{
     padding-top: 7%;
 }
+/*height del main de cuadro de sesiones*/
+.altura-main{
+    max-height: 500px;
+}
 .altura-header{
     position: fixed;
     width: 100%;
@@ -419,14 +423,115 @@ picture{
     font-weight: 900;
 }
 
+/*cuadro de sesiones css*/
+
+.sesiones{
+    width: 50%;
+    
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 
+    10% 20% 15% 35% 20%;
+    grid-template-rows: fit-content(40%);
+    
+    background-image: linear-gradient(to bottom left,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+
+    margin-bottom: 30%;
+    box-shadow: 0px 0px 8px rgb(72, 67, 67);
+}
+
+
+
+
+.sesiones div{
+    border: 1px solid #8f8f8f;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sesiones a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+
+}
+
+.sesiones div:hover a{
+    padding-left: 15px;
+    text-shadow: 1px 4px 5px rgb(9, 8, 8);
+    color: #fcfcfc;
+    font-size: 1.3em;
+}
+.margen-sesiones{
+    padding-top: 13%;
+    height: 400px;
+    overflow: auto;     
+}
+.margen-sesiones::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+.margen-sesiones::-webkit-scrollbar {
+    display: none; 
+  }
+.carousel-ubicacion{
+    /*background-color: rgb(204, 235, 235);*/
+    position: fixed;
+    top: 18%;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    
+} .sidebar {
+    position: fixed;
+    top: 18%;
+    left: -200px;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .sidebar:hover{
+    left: 0;
+    transition: all .5s;
+  }
+
+  .sidebar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .sidebar a:hover {
+    background-color: #495057;
+  }
+
+  .sidebar .dropdown-menu {
+    background-color: #495057;
+  }
+/*barra opciones lateral*/
+
+
 @media only screen and (min-width: 320px) and (max-width: 768px){
-  /*  .encabezado ul{
-        flex-direction: column;
+    .sidebar{
+        top: 27%;
     }
-    .encabezado ul li{
-        border-left: none;
-        border-bottom: 1px solid white;
-    }*/
+    .margen-sesiones{
+        height: 250px;
+        padding-top: 29%;
+        margin-left: 10%;
+    }
+    .sesiones{
+        width: 100%;
+        top: 30%;
+    }
     .drop-tomos{
         display: flex;
         flex-wrap: wrap;
@@ -434,7 +539,7 @@ picture{
         top: 35%;
     }
     .fondocolor{
-        top: 35%;
+        top: 25%;
     }
     .cuadrotomo{
         margin-top: 4%;
@@ -468,6 +573,17 @@ picture{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
+    .sidebar{
+        top: 18%;
+    }
+    .margen-sesiones{
+        height: 250px;
+        padding-top: 20%;
+        margin-left: 10%;
+    }
+    .sesiones{
+        width: 100%;
+    }
     .titulo_tomos p{
         top: 15%;
         font-size: 1em;
