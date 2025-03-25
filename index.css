@@ -479,7 +479,6 @@ picture{
     display: none; 
   }
 .carousel-ubicacion{
-    /*background-color: rgb(204, 235, 235);*/
     position: fixed;
     top: 18%;
     right: 0;
@@ -492,7 +491,7 @@ picture{
     left: -200px;
     width: 250px;
     height: 100%;
-    background-color: #343a40;
+    background-image: linear-gradient(to bottom  right, rgb(97, 154, 207) -60%, #fcfcfc 100%);
     padding-top: 20px;
     padding-left: 10px;
   }
@@ -502,7 +501,7 @@ picture{
   }
 
   .sidebar a {
-    color: white;
+    color: #495057;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
@@ -510,11 +509,12 @@ picture{
   }
 
   .sidebar a:hover {
-    background-color: #495057;
+    color: aliceblue;
+    background-color: #2b5a89;
   }
 
   .sidebar .dropdown-menu {
-    background-color: #495057;
+    background-color: #2b5a89;
   }
 /*barra opciones lateral*/
 
