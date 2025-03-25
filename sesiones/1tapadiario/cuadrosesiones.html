@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta name="author" content="AsuntosLink">
+    <meta name="description" content="AsuntosLink es una plataforma de gestión de expedientes.">
+    <meta name="keywords" content="asuntoslink, expedientes, gestión, plataforma, sesiones, diarios, legislatura, tucumán, argentina, gobierno, poder, judicial, legislativo, ejecutivo, legisladores, diputados, senadores, leyes, proyectos, decretos, resoluciones, comunicaciones, oficios, notas, documentos, archivos, digital, busqueda, consulta, acceso, público, privado, seguridad, leyes, normas, reglamentos, decretos, resoluciones, comunicaciones, oficios, notas, documentos, archivos, digital, busqueda">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyboard" content="">
+    <title>Cuadro de Sesiones</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asuntoslink.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="talk_me">
+    <p><i class="bi bi-whatsapp"></i></p>
+    <form action="https://formspree.io/f/mwkajgrr" method="POST" id="myForm">
+      <textarea name="message" id="area" cols="40" rows="4" minlength="5" maxlength="200"></textarea>
+      <button type="submit" id="submitButton" disabled>Enviar</button>
+      <p id="feedbackMessage" class="message"></p>
+  </form>
+</div>
+
+  <div class="sidebar">
+    <div class="caja-int">
+      <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Autoridades</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/legisladores2/mandatoleg2-1.html">MANDATOS Y SEC.ELECTORALES</a>
+        <a class="dropdown-item" href="/legisladores2/bloquespoliticos2-1.html">BLOQUES <br> POLÍTICOS</a>
+        <a class="dropdown-item" href="/comisiones/cuadrocomisiones.html">COMISIONES</a>
+      </div>
+    </div>
+
+    <!-- Otras opciones -->
+    <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/indicetematico.html">Índice Temático</a></div>
+    <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/nomenclador.html">Nomenclador</a></div>
+    <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/cuadroleyes.html">Cuadro Leyes</a></div>
+    <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="../ainicio/inicio.html" title="TOMO 115°PL"><span>INICIO</span></a></div>
+  </div>
+
+<header class="altura-header">
+    <div class="container-fluid bg-light principal-contenido">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tamaño-img mt-2">
+          <img src="/imagenes/logo2024sinletras.png" alt="imagen Honorable Legislatura">
+        </div>
+    
+        <div class="d-sm-none d-md-block col-md-4 col-lg-4 col-xl-4 text-center mt-3">
+          <h4>HONORABLE LEGISLATURA DE TUCUMÁN</h4>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-3" id="clock">
+          
+        </div>
+      </div>
+    </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-light color-bg-navbar  w-100 z-3">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav w-100 d-flex justify-content-between">
+                  <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Sesiones</a>
+                  <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Noticias</a>
+                  <a class="nav-link active flex-fill text-center text-light" href="https://www.google.com/maps/place/Honorable+Legislatura+de+Tucum%C3%A1n/@-26.8177276,-65.2027659,2381m/data=!3m1!1e3!4m6!3m5!1s0x94225c3cddb2fff3:0x8c2825d9051ad953!8m2!3d-26.8177276!4d-65.2027659!16s%2Fg%2F1tf66kl7?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ubicación</a>
+                  <a class="nav-link active flex-fill text-center text-light" href="#">Resumen</a>
+                  <a class="nav-link active flex-fill text-center text-light" href="#">Contacto</a>
+                  <a class="nav-link active flex-fill text-center text-light" href="#">Acerca de...</a>
+                  <a class="nav-link active flex-fill text-center text-light" href="/index.html">Inicio</a>
+    <div class="text-center">
+    <button type="button" class="btn btn-primary bg-primary-subtle text-dark fs-6" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        ¿QUÉ ES UN PERÍODO LEGISLATIVO?
+      </button>
+    </div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="true" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body size-modal bg-primary-subtle text-dark">
+              ...<h4><strong>PERÍODO LEGISLATIVO</strong></h4>
+              <h5>Se denomina así a la Actividad Legislativa durante Un Año, desde el 01/03 <p>(Art. 52 de la Constitución)</p> al 28/02 del próximo año.</h5>
+              <h5>Esta PÁGINA WEB del DIARIO DE SESIONES abarca la información de cada uno de los Períodos Legislativos e incluye gráficos, sonidos, videos y fotos. </h5>
+                <h5>De un promedio de 4500 páginas de papel, suma de los Diarios de Sesiones e información complementaria para un (1) Período Legislativo, que los usuarios debían consultar en 4 ó 5 Tomos, ahora lo pueden hacer a través de <strong>un simple clickeo,</strong> con un navegador web pudiendo interactuar e informarse. <h5>
+                <h5><ins>El PODER LEGISLATIVO</ins> comprende desde sus Diarios de Sesiones, Autoridades, Legisladores, Bloques Políticos, Comisiones, para continuar con el Índice Temático, Nomenclador, Cuadro de Leyes y Vetos del Poder Ejecutivo.</h5>
+                
+               
+    
+                <h5>Del esencial <strong>Diario de Sesiones</strong> surge también la información del: </h5>
+                <h5><ins>PODER EJECUTIVO Y PODER JUDICIAL.</ins><br> Principalmente las Autoridades, Mandatos y Estructuras de los organismos.</h5>
+                <a href="../opciones/nuevo.html"><h4>Ver Resumen en Gráfico ▼</h4></a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar ventana</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>  
+<main class="altura-main">
+<div class="d-flex justify-content-center align-items-stretch margen-sesiones vh-100">      
+    <div class="sesiones">
+        <div>N°</div>
+        <div>FECHA</div>
+        <div>REUNIÓN</div>
+        <div>TIPO DE SESIÓN</div>
+        <div>FOJAS</div>
+
+            <div>1</div>
+            <div>01/03/2020</div>
+            <div>I</div>
+            <div><a href="/diariosesiones/diariosesiones1.html">De Apertura</a></div>
+            <div>1 - 30</div>
+
+            <div>2</div>
+            <div>17/03/2020</div>
+            <div>II</div>
+            <div><a href="/diariosesiones/diariosesiones2.html">Sesión Especial Ordinaria</a></div>
+            <div>31 - 472</div>
+
+            <div>3</div>
+            <div>07/04/2020</div>
+            <div>III</div>
+            <div><a href="/diariosesiones/diariosesiones3.html">Sesión Especial Ordinaria</a></div>
+            <div>473 - 718</div>
+
+            <div>4</div>
+            <div>30/04/2020</div>
+            <div>IV</div>
+            <div><a href="/diariosesiones/diariosesiones4.html">Sesión Ordinaria</a></div>
+            <div>719 - 1058</div>
+
+            <div>5</div>
+            <div>21 y 27/05/2020</div>
+            <div>V</div>
+            <div><a href="/diariosesiones/diariosesiones5.html">Sesión Ordinaria</a></div>
+            <div>1059 - 1558</div>
+
+            <div>6</div>
+            <div>11/06/2020</div>
+            <div>VI</div>
+            <div><a href="/diariosesiones/diariosesiones6.html">Sesión Ordinaria</a></div>
+            <div>1559 - 1972</div>
+
+            <div>7</div>
+            <div>07/07/2020</div>
+            <div>VII</div>
+            <div><a href="/diariosesiones/diariosesiones7.html">Sesión Especial Extraordinaria</a></div>
+            <div>1973 - 2490</div>
+
+            <div>8</div>
+            <div>23/07/2020</div>
+            <div>VIII</div>
+            <div><a href="/diariosesiones/diariosesiones8.html">Sesión Extraordinaria</a></div>
+            <div>2491 - 2756</div>
+
+            <div>9</div>
+            <div>06/08/2020</div>
+            <div>IX</div>
+            <div><a href="/diariosesiones/diariosesiones9.html">Sesión Extraordinaria</a></div>
+            <div>2757 - 3292</div>
+
+            <div>10</div>
+            <div>09/09/2020</div>
+            <div>X</div>
+            <div><a href="/diariosesiones/diariosesiones10.html">Sesión Especia Ordinaria</a></div>
+            <div>3293 - 3892</div>
+
+            <div>11</div>
+            <div>01/10/2020</div>
+            <div>XI</div>
+            <div><a href="/diariosesiones/diariosesiones11.html">Sesión Ordinaria</a></div>
+            <div>3893 - 4370</div>
+
+            <div>12</div>
+            <div>05/11/2020</div>
+            <div>XII</div>
+            <div><a href="/diariosesiones/diariosesiones12.html">Sesión Ordinaria</a></div>
+            <div>4371 - 4904</div>
+
+            <div>13</div>
+            <div>26/11/2020</div>
+            <div>XIII</div>
+            <div><a href="/diariosesiones/diariosesiones13.html">Sesión Ordinaria</a></div>
+            <div>4905 - 5426</div>
+
+            <div>14</div>
+            <div>22/12/2020</div>
+            <div>XIV</div>
+            <div><a href="/diariosesiones/diariosesiones14.html">Sesión Especial Ordinaria</a></div>
+            <div>5427 - 5808</div>
+
+            <div>15</div>
+            <div>01/02/2021</div>
+            <div>XV</div>
+            <div><a href="/diariosesiones/diariosesiones15.html">Sesión Especial Extraordinaria</a></div>
+            <div>5809 - 5912</div>
+
+            <div>16</div>
+            <div>18/02/2021</div>
+            <div>XVI</div>
+            <div><a href="/diariosesiones/diariosesiones16.html">Sesión Extraordinaria</a></div>
+            <div>5913 - 6138</div>
+    </div>
+</div>
+
+        </main>
+<section>
+        <div class="carousel-ubicacion  bg-primary-subtle p-2 text-dark bg-opacity-50 d-none d-xl-block">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imagenes/edificioleg.jpg" class="d-block w-100 img-fluid" alt="imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Edificio Legislatura</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/hldavid.png" class="d-block w-100 img-fluid" alt="imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Perido 116°</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/interior-leg1.jpg" class="d-block w-100 img-fluid" alt="imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Interior Legislatura</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/recinto.webp" class="d-block w-100 img-fluid" alt="imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Jura Recinto</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <h5>¿QUÉ REPRESENTA CADA SESIÓN?</h5>
+    <!-- Primer slide -->
+    <div class="carousel-item active">
+      <div class="box">
+        <div class="content">
+          <h6 class="text-center text-decoration-underline">Sesión Preparatoria</h6> 
+          Art. 77 de la Constitución: 
+          <p class="p-2">"Al constituirse la Legislatura después de cada elección, será presidida por el Presidente saliente o en su defecto por el Legislador electo de más edad, con el Secretario del Cuerpo, al solo fin de la elección de autoridades provisorias que actuarán hasta que los electos hayan prestado juramento y designado autoridades definitivas".</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo slide -->
+    <div class="carousel-item">
+      <div class="box">
+        <div class="content">
+          <h6 class="text-center text-decoration-underline">Sesión de Apertura</h6>
+          Art. 101, inciso 8° de la Constitución: 
+          <p class="p-2">El Gobernador dará cuenta anualmente a la Legislatura, en la apertura de sus sesiones, sobre el estado general de la Administración, exponiendo la situación de la Provincia.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercer slide -->
+    <div class="carousel-item">
+      <div class="box">
+        <div class="content">
+          <h6 class="text-center text-decoration-underline">Sesión Ordinaria</h6>
+          Art. 52 de la Constitución:
+          <p class="p-2">"La Legislatura se reunirá el 1º de marzo de cada año en sesiones ordinarias las que durarán hasta el 30 de junio, inclusive. Volverá a reunirse en un segundo período ordinario de sesiones el 1º de setiembre hasta el 31 de diciembre, inclusive".</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuarto slide -->
+    <div class="carousel-item">
+      <div class="box">
+        <div class="content">
+          <h6 class="text-center text-decoration-underline">Sesión Extraordinaria</h6>
+          <p class="p-2">Puede también ser convocada por el Poder Ejecutivo, o por su Presidente y hacer citar a la Legislatura cuando exista orden del día, de acuerdo a los términos del artículo 53 de la Constitución.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinto slide -->
+    <div class="carousel-item">
+      <div class="box">
+        <div class="content">
+          <h6 class="text-center text-decoration-underline">Sesión Especial</h6><br> 
+          <p class="p-2">Las realizadas en cualquier época, fuera de los días y/u horas establecidas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles del carousel -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+        
+
+      </section>
+       
+        <div class="position-relative bottom-0 start-0 w-100">
+            <footer class="primerpie_pag mt-5 ">
+             <ul>
+                 <li><a href="https://www.instagram.com/legislaturatucuman?igsh=MTJ2cm1ubG9heXozOA"><i class="bi bi-instagram"></i></a></li>
+                 <li><a href="https://www.facebook.com/profile.php?id=61552602646020"><i class="bi bi-facebook"></i></a></li>
+                 <li><a href="https://x.com/LegislaturaT?t=iHA1doB8nLAUovEn8SL4Q&s=09"><i class="bi bi-twitter-x"></i></a></li>
+                 <li><a href="https://wa.me/5493816114185" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                 <li><a href="https://www.youtube.com/channel/UCAAEMVW-oPg4FnIYBNfjVCQ" target="_blank"><i class="bi bi-youtube"></i></a></li>
+             </ul>
+
+          </footer>
+          <div class="container-fluid segunpie_pag">
+           <div class="row w-100">
+             <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+               <ul>
+                 <h4>Mandatos</h4>
+                 <li><a href="#">Acerca de...</a></li>
+                 <li><a href="#">Sección Electoral</a></li>
+                 <li><a href="#">Departamentos</a></li>
+                 <li><a href="#">Legisladores</a></li>
+                 <li><a href="#">Artículo 43</a></li>
+             </ul>
+             </div>
+             <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+               <ul>
+                 <h4>Bloques Políticos</h4>
+                 <li><a href="#">Acerca de...</a></li>
+                 <li><a href="#">Períodos</a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+             </ul>
+             </div>
+             <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+               <ul>
+                 <h4>Comisiones</h4>
+                 <li><a href="#">Permanentes</a></li>
+                 <li><a href="#">Interpoderes</a></li>
+                 <li><a href="#">Especiales</a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+             </ul>
+             </div>
+             <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+               <ul>
+                 <h4>Constitución Provincial</h4>
+                 <li><a href="#">Leyes</a></li>
+                 <li><a href="#">Vetos</a></li>
+                 <li><a href="#">Legisladores</a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+             </ul>
+             </div>
+           </div>
+         </div>
+          <footer class="tercerpie_pag">
+             <a href="#">&copy;Estrategias_Páginas_JD</a>
+          </footer>
+         </div>
+       
+  
+    <script src="/index.js"></script>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
