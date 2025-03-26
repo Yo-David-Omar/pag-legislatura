@@ -11,6 +11,11 @@
     padding-top: 7%;
 }
 /*height del main de cuadro de sesiones*/
+.altura-contenido2{
+    margin-right: 10%;
+    padding: 10%;
+    min-height: 100vh;
+}
 .altura-main{
     max-height: 500px;
 }
@@ -520,6 +525,10 @@ picture{
 
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
+    .altura-contenido2{
+        padding-top: 27%;
+        margin-right: 0;
+    }
     .sidebar{
         top: 27%;
     }
@@ -573,6 +582,10 @@ picture{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
+    .altura-contenido2{
+        padding-top: 20%;
+        margin-right: 0;
+    }
     .sidebar{
         top: 18%;
     }
