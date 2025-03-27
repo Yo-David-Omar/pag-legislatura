@@ -428,7 +428,7 @@ picture{
     font-weight: 900;
 }
 
-/*cuadro de sesiones css*/
+/*cuadro de sesiones css
 
 .sesiones{
     width: 50%;
@@ -482,7 +482,7 @@ picture{
 }
 .margen-sesiones::-webkit-scrollbar {
     display: none; 
-  }
+  }*/
 .carousel-ubicacion{
     position: fixed;
     top: 18%;
