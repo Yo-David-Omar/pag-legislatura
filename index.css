@@ -11,11 +11,33 @@
     padding-top: 7%;
 }
 /*height del main de cuadro de sesiones*/
-.altura-contenido2{
-    margin-right: 10%;
-    padding: 10% 0 0;
+.altura-contenido-cuadro{
+    width: 80%;
+    padding: 10% 5% 0;
     min-height: 100vh;
 }
+.custom-link {
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none; 
+    color: #3f668e; 
+    transition: all .5s;
+  }
+  
+  .custom-link:hover {
+    font-weight: bold;
+    margin-left: 1%;
+    color: #102c4a; 
+    text-decoration: underline;
+  }
+  
+  .custom-link:visited {
+    color: #081ff3; 
+  }
+  
+  .custom-link:active {
+    color: #371c1f; 
+  }
 .altura-main{
     max-height: 500px;
 }
@@ -428,7 +450,7 @@ picture{
     font-weight: 900;
 }
 
-/*cuadro de sesiones css*/
+/*cuadro de sesiones css
 
 .sesiones{
     width: 50%;
@@ -482,7 +504,7 @@ picture{
 }
 .margen-sesiones::-webkit-scrollbar {
     display: none; 
-  }
+  }*/
 .carousel-ubicacion{
     position: fixed;
     top: 18%;
@@ -525,9 +547,10 @@ picture{
 
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
-    .altura-contenido2{
+    .altura-contenido-cuadro{
+        width: 80%;
         padding-top: 27%;
-        margin-right: 0;
+        margin-left: 10%;
     }
     .sidebar{
         top: 27%;
@@ -582,9 +605,10 @@ picture{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
-    .altura-contenido2{
-        padding-top: 20%;
-        margin-right: 0;
+    .altura-contenido-cuadro{
+        width: 80%;
+        padding-top: 15%;
+        margin-left: 10%;
     }
     .sidebar{
         top: 18%;
