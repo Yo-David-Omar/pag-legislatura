@@ -12,10 +12,56 @@
 }
 /*height del main de cuadro de sesiones*/
 .altura-contenido-cuadro{
-    width: 80%;
-    padding: 10% 5% 0;
+    margin-top: 85px;
+    padding: 0 0 10% 5%;
     min-height: 100vh;
+    img{
+        height: 180px;
+
+    }
 }
+/*ejemplo*/
+.dos {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  .titulos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  .titulos h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .titulos h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .borde {
+    border-bottom: 2px solid #007bff;
+    margin: 20px 0;
+  }
+  .presentes a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .presentes a:hover {
+    text-decoration: underline;
+  }
+  .go-sumario a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .go-sumario a:hover {
+    background-color: #0056b3;
+  }
+/*-------------------*/
 .custom-link {
     font-family: 'Frank Ruhl Libre', sans-serif;
     font-size: 1.2em;
@@ -43,8 +89,9 @@
 }
 .altura-header{
     position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 6000;
+    z-index: 1000;
 }
 .principal-contenido{
     height: 100%;
@@ -548,8 +595,7 @@ picture{
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
     .altura-contenido-cuadro{
-        width: 80%;
-        padding-top: 27%;
+        margin-top: 150px;
         margin-left: 10%;
     }
     .sidebar{
@@ -606,8 +652,7 @@ picture{
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
     .altura-contenido-cuadro{
-        width: 80%;
-        padding-top: 15%;
+        margin-top: 150px;
         margin-left: 10%;
     }
     .sidebar{
