@@ -1,0 +1,334 @@
+/*estilos de parrafos*/
+.parrafos{
+    
+    border: 4px double rgba(40, 74, 154, 0.547);
+    padding: 10%;
+}
+.parrafos div{
+   
+    padding: 2%;
+    margin: 5%;
+}
+.fotos1{
+    text-align: center;   
+}
+/*parrafos titulos h4*/
+.parrafos a{
+    overflow: visible;
+    text-decoration: none;
+    color: #5285cc;
+    height: 30px;
+}
+.parrafos a:hover{
+    text-decoration-line: underline;
+    transition: all .5s;
+}
+.parrafos h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.parrafos h4:hover{
+    background-color: #5285cc;
+    color: white;
+}
+.parrafos h4 a:hover{
+    color: white;
+}
+/*fin parrafos h4*/
+.parrafos p{
+   
+    line-height: 25px;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.parrafos p::first-letter{
+    font-size: 1.2em;
+    margin: 1px;
+}
+.parrafos div{
+    font-size: 1.2em;
+    
+}
+.parrafos div p{
+    font-size: 1.2em;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: midnightblue;
+    font-weight: bold;
+}
+.letra-abecedario{
+    button{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        background-color: rgb(144, 174, 229);
+        color: darkslategray;
+    }
+}
+.fotos1{
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    h3{
+        color: #5285cc;
+        width: 30%;
+        position: absolute;
+        right: 28%;
+        text-shadow: 2px 3px 2px white;
+        white-space: normal;
+    }
+}
+/*estilos del scroll del contenido del nomenclador*/
+.scroll-columnas{
+    overflow-y: smooth;
+    overflow-x: hidden;
+    height: 400px;
+    top: 30%;
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.scroll-columnas::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+/*estilos vetos*/
+
+.cuadrocolor{
+    background-color: white;
+    position: fixed;
+    top: 3%;
+    right: -1.5%;
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+}
+.cuadrocolor div{
+    padding: 3%;
+}
+
+
+.slider-container {
+    width: 100%; /* Ajusta el ancho según lo necesites */
+    height: 180px; /* Ajusta el alto según lo necesites */
+    overflow: hidden;
+    max-height: 100%;
+    
+    
+}
+
+.slider-container img {
+    border-radius: 2%;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.bord{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 20px);
+}
+.bord div{
+    border-right: 10px solid cadetblue;
+}
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    background-color: cadetblue;
+    color: mistyrose;
+}
+.bord a{
+    text-decoration: none;
+    margin-top: 3%;
+    color: rgb(173, 118, 78);
+}
+
+.bord img{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    width: 17%;
+   
+}
+
+
+.bord div a:hover p{
+    border-bottom: 1px solid rgb(100, 90, 90);
+    padding-left: 10%;
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    text-shadow: 1px 1px 3px rgb(3, 3, 2);   
+}
+
+.bord div p{
+    transition: all .5s;
+    padding: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+/*--------------------------------------*/
+
+.sanciones1{
+    margin: 5% 0 20% 20%;
+    width: 56%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 31% 69%;
+    grid-template-rows: 7 (min-content 10%, max-content 20%);
+    border: .5px solid #8f8f8f;
+    border-radius: 4px;
+    background-color: #3a7a8b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+.sanciones1 div{
+    border: 1px solid #8f8f8f;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height : 1.5;
+    color: beige;
+    transition: all .5s;
+}
+
+.sanciones1 div:hover{
+    background-color: ghostwhite;
+    color: #8f8f8f;
+    
+}
+.sanciones1 div a{
+    text-decoration: none;
+    color: azure;
+}
+.sanciones1 div:hover a{
+    color: #8f8f8f;
+}
+
+
+
+.sanciones{
+    margin: 5% 0 0 20%;
+    width: 56%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 31% 69%;
+    grid-template-rows: 7 (min-content 10%, max-content 20%);
+    border: .5px solid #8f8f8f;
+    border-radius: 4px;
+    background-color: #3a7a8b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+.sanciones div{
+    border: 1px solid #8f8f8f;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height : 1.5;
+    color: beige;
+    transition: all .5s;
+}
+.sanciones div:hover{
+    background-color: ghostwhite;
+    color: #8f8f8f;
+    
+}
+.sanciones div a{
+    text-decoration: none;
+    color: azure;
+}
+.sanciones div:hover a{
+    color: #8f8f8f;
+}
+
+.uno{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.blateral1{
+    width: 12%;
+    height: 200px;
+    position: fixed;
+    left: 6%;
+    top: 11%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #e4e1e1;
+}
+
+.blateral1 div{
+    margin: 0;
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 17px);
+    
+    font-size: .9em;
+    text-align: start;
+    padding: 8%;
+}
+.blateral1 div h1{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    border-width: 20%;
+    color: darksalmon;
+    text-align: center;
+   
+}
+.blateral1 div p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(98, 135, 179);
+    font-size: .8em;
+}
+/*estilos buscador
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+}
+.suggestion-item {
+    padding: 5px;
+    cursor: pointer;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}*/

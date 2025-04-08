@@ -130,3 +130,88 @@ document.addEventListener('click', function(event) {
           document.getElementById('image2').classList.remove('hidden'); // Muestra la segunda imagen
         }, 10000); // Después de 10 segundos
       };
+
+      const searchInput = document.getElementById('searchInput');
+        const suggestionsBox = document.getElementById('suggestions');
+        const searchButton = document.getElementById('searchButton');
+        const clearButton = document.getElementById('clearButton');
+
+/* cuadro de leyes */
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario
+
+    var query = document.getElementById('searchInput').value.toLowerCase();
+    var sections = document.querySelectorAll('section');
+
+    // Recorre todas las secciones para encontrar una que coincida
+    var found = false;
+    sections.forEach(function(section) {
+        if (section.id === query) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            found = true;
+        }
+    });
+
+    if (!found) {
+        alert('No se encontró ninguna sección con ese nombre. Escribe exactamente asuntos-2/asuntos-3...');
+    }
+});
+        /*
+        // Obtener todos los nombres dentro de etiquetas <h3>
+        const names = Array.from(document.querySelectorAll('h3')).map(h3 => h3.textContent.trim());
+
+        // Mostrar sugerencias mientras se escribe
+        searchInput.addEventListener('input', function () {
+            const query = searchInput.value.toLowerCase();
+            suggestionsBox.innerHTML = '';
+
+            if (query.trim() !== '') {
+                const filteredNames = names.filter(name => name.toLowerCase().includes(query));
+                filteredNames.forEach(name => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.className = 'suggestion-item';
+                    suggestionItem.textContent = name;
+                    suggestionItem.addEventListener('click', function () {
+                        searchInput.value = name;
+                        suggestionsBox.innerHTML = '';
+                    });
+                    suggestionsBox.appendChild(suggestionItem);
+                });
+            }
+        });
+
+        // Buscar y resaltar coincidencias
+        searchButton.addEventListener('click', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            const elements = document.querySelectorAll('h3'); // Solo buscar en <h3>
+            let found = false;
+
+            // Limpiar resaltados previos
+            elements.forEach(element => {
+                element.innerHTML = element.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+            });
+
+            // Resaltar coincidencias
+            elements.forEach(element => {
+                if (element.textContent.toLowerCase().includes(searchTerm) && searchTerm.trim() !== '') {
+                    found = true;
+                    const regex = new RegExp(`(${searchTerm})`, 'gi');
+                    element.innerHTML = element.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+
+            if (!found && searchTerm.trim() !== '') {
+                alert('No se encontraron coincidencias.');
+            }
+        });
+
+        // Limpiar búsqueda y sugerencias
+        clearButton.addEventListener('click', function () {
+            const elements = document.querySelectorAll('h3');
+            elements.forEach(element => {
+                element.innerHTML = element.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+            });
+            searchInput.value = '';
+            suggestionsBox.innerHTML = '';
+        });*/

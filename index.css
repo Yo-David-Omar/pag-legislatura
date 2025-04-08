@@ -96,6 +96,9 @@
 .principal-contenido{
     height: 100%;
 }
+.z-index-navbar{
+    z-index: 3000;
+}
 .color-bg-navbar{
     background-color: brown;
 }
@@ -434,13 +437,14 @@ picture{
     
 } .sidebar {
     position: fixed;
-    top: 18%;
+    top: 19%;
     left: -200px;
     width: 250px;
     height: 100%;
     background-image: linear-gradient(to bottom  right, rgb(97, 154, 207) -60%, #fcfcfc 100%);
     padding-top: 20px;
     padding-left: 10px;
+    z-index: 2000;
   }
   .sidebar:hover{
     left: 0;

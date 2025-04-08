@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta name="author" content="AsuntosLink">
+    <meta name="description" content="AsuntosLink es una plataforma de gestión de expedientes.">
+    <meta name="keywords" content="asuntoslink, expedientes, gestión, plataforma, sesiones, diarios, legislatura, tucumán, argentina, gobierno, poder, judicial, legislativo, ejecutivo, legisladores, diputados, senadores, leyes, proyectos, decretos, resoluciones, comunicaciones, oficios, notas, documentos, archivos, digital, busqueda, consulta, acceso, público, privado, seguridad, leyes, normas, reglamentos, decretos, resoluciones, comunicaciones, oficios, notas, documentos, archivos, digital, busqueda">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyboard" content="">
+    <title>TOMOS LEGISLATURA 115 PL</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asuntoslink.css">
+    <link rel="stylesheet" href="../informacion/stilosinfo.css">
+    <link rel="stylesheet" href="../informacion/cuadrodeleyes.css">
+</head>
+<body>
+   
+    <div class="talk_me">
+        <p><i class="bi bi-whatsapp"></i></p>
+        <form action="https://formspree.io/f/mwkajgrr" method="POST" id="myForm">
+          <textarea name="message" id="area" cols="40" rows="4" minlength="5" maxlength="200"></textarea>
+          <button type="submit" id="submitButton" disabled>Enviar</button>
+          <p id="feedbackMessage" class="message"></p>
+      </form>
+    </div>
+
+<header class="altura-header">
+    <div class="sidebar">
+        <div class="caja-int">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Autoridades</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-light" href="/legisladores2/mandatoleg2-1.html">MANDATOS Y SEC.ELECTORALES</a>
+            <a class="dropdown-item text-light" href="/legisladores2/bloquespoliticos2-1.html">BLOQUES <br> POLÍTICOS</a>
+            <a class="dropdown-item text-light" href="/comisiones/cuadrocomisiones.html">COMISIONES</a>
+          </div>
+        </div>
+    
+        <!-- Otras opciones -->
+        <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/indicetematico.html">Índice Temático</a></div>
+        <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/nomenclador.html">Nomenclador</a></div>
+        <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="/informacion/cuadroleyes.html">Cuadro Leyes</a></div>
+        <div><a class="pt-sm-none pt-md-3 pt-xl-5" href="../ainicio/inicio.html" title="TOMO 115°PL"><span>INICIO</span></a></div>
+      </div>
+<div class="container-fluid bg-light principal-contenido">
+  <div class="row text-center text-md-start">
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tamaño-img mt-2">
+      <img src="../imagenes/logo2024sinletras.png" alt="imagen Honorable Legislatura">
+    </div>
+
+    <div class="d-sm-none d-md-block col-md-4 col-lg-4 col-xl-4 text-center mt-3">
+      <h4>HONORABLE LEGISLATURA DE TUCUMÁN</h4>
+    </div>
+    
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-3" id="clock">
+      
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light color-bg-navbar w-100 z-index-navbar">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100 d-flex justify-content-between">
+          <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Sesiones</a>
+          <a class="nav-link active flex-fill text-center text-light" aria-current="page" href="https://eltucumano.com" target="_blank">Noticias</a>
+          <a class="nav-link active flex-fill text-center text-light" href="https://www.google.com/maps/place/Honorable+Legislatura+de+Tucum%C3%A1n/@-26.8177276,-65.2027659,2381m/data=!3m1!1e3!4m6!3m5!1s0x94225c3cddb2fff3:0x8c2825d9051ad953!8m2!3d-26.8177276!4d-65.2027659!16s%2Fg%2F1tf66kl7?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ubicación</a>
+          <a class="nav-link active flex-fill text-center text-light" href="#">Resumen</a>
+          <a class="nav-link active flex-fill text-center text-light" href="#">Contacto</a>
+          <a class="nav-link active flex-fill text-center text-light" href="#">Acerca de...</a>
+          <a class="nav-link active flex-fill text-center text-light" href="/index.html">Inicio</a>
+          <div class="dropdown-center">
+            <button class="btn btn-outline-info bg-primary-subtle border-bottom border-2 border-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-dark">Períodos Legislativos</span>
+            </button>
+            <ul class="dropdown-menu bg-light bg-warning-subtle">
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 120°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 119°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 118°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 117°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 116°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 115°</a></li>
+              <li><a class="dropdown-item  text-warning-emphasis text-center" href="#">TOMO 114°</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>  
+<main class="altura-contenido-cuadro mt-5">
+    <div class="position-fixed end-0 mb-4 p-5">
+        <div class="focus-ring m-5 p-2 border rounded-4 w-50 text-center bg-light">
+            <a class="icon-link fs-6" href="../informacion/cuadrodeleyes.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">  
+                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                </svg>
+                LEYES
+              </a>
+        </div>
+    </div>
+    <div class="sanciones">
+
+        <div class="uno"><strong>VETO PARCIAL</strong> </div>
+        <div><strong>Tema</strong></div>
+        <div>CERRO DENOMINADO EL PELAO, DE LA COMUNA DE EL MOLLAR (TAFÍ DEL VALLE). DECLARACIÓN DE EMERGENCIA AMBIENTAL, ECOLÓGICA, Y ZONA DE PROTECCIÓN ARQUEOLÓGICA</div>
+        <div><strong>Autores</strong></div>
+        <div>Regino N. Amado.- Sandra del V. Orquera.-  Roque T. Álvarez.- Federico A. Masso.- Sara Alperovich.- José H. Vermal.- Raúl E. Albarracín.- Gerónimo Vargas Aignasse.- Roberto A. Palina.- José R. Ascárate.- Gonzalo D. Monteros</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="OJO PERIODO 114/diariosesiones/asuntos2.html#ley2-32"></a>37-PL-20</div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>20/02/2020,	Pág. 4356 (Tomo 114° P.L.)<a name="#"></a></div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>20/02/2020,	Pág.   4510 (114° P.L.) </div>
+        <div><strong>Fecha de Promulgación</strong></div>
+        <div>06/03/2020, Ley n° 9224.</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div> <a href="/asuntoslink/asuntos2.html#eje1-7">513/9 (MDP) Expte. nº 17-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>10/03/2020</div>
+    </div>
+
+    <div class="sanciones">
+
+        <div class="uno">VETO PARCIAL <a name="v-79-PL-20"></a></div>
+        <div><strong>Tema</strong></div>
+        <div>DECRETO DE NECESIDAD Y URGENCIA N° 1/1-2020 DEL PODER EJECUTIVO (DECLARACIÓN DE EMERGENCIA EPIDEMIOLÓGICA POR EL COVID-19). SANCIONES ADMINISTRATIVAS EN CASO DE SU INOBSERVANCIA
+        </div>
+        <div><strong>Autores</strong></div>
+        <div>Gerónimo Vargas Aignasse</div>
+<div><strong>Expedientes</strong></div>
+        <div><p><a href="/asuntoslink/asuntos2.html#ley2-33">79-PL-20</a></p></div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>17/03/2020,	Pág.   210</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>17/03/2020,	Pág. 418.</div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>15/04/2020, Ley n° 9233</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>17/04/2019</div>
+        <div><strong>Decreto del Veto </strong></div>
+        <div> <a href="/asuntoslink/asuntos4.html#eje1-3"> 699/14  (MGYJ) Expte. nº 26-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>17/04/2020</div>
+    </div>
+<!--------------------------------------------------->
+    <div class="sanciones">
+
+        <div class="uno">VETO PARCIAL <a name="v-116-PL-20"></a></div>
+        <div><strong>Tema</strong></div>
+        <div> SERVICIO PROVINCIAL DE TRANSPORTE PÚBLICO DE PASAJEROS. ESTABLECIMIENTO DE MEDIDAS DE SEGURIDAD SANITARIA PARA PREVENIR EL COVID-19</div>
+        <div><strong>Autores</strong></div>
+        <div>a) Raúl. E. Albarracín  -  Walter F. Berarducci <br>
+            b)  José H. Vermal  -  Ricardo A. Bussi  
+        </div>
+        <div><strong>Expedientes</strong></div>
+        <div> <a href="/asuntoslink/asuntos4.html#ley2-10">a) 116-PL-20 </a><br> 
+        <a href="/asuntoslink/asuntos4.html#ley2-15"> b)  121-PL-20</a>
+        </div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>a) 30/04/2020,	Pág.      804 <br>
+            b) 30/04/2020,     Pág.      821
+</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>30/04/2020,	Pág.  1943</div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>15/05/2020	- Ley n° 9245</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>18/05/2020</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos5.html#eje1-2">812/7 (MS) Expte. nº 33-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>18/05/2020</div>
+    </div>
+
+    <div class="sanciones">
+
+        <div class="uno">VETO TOTAL <a name="v-237-PL-20"></a></div>
+        <div><strong>Tema</strong></div>
+        <div>LÍNEA GRATUITA ESTATAL DE NÚMERO CORTO PARA LA RECEPCIÓN DE DENUNCIAS DE HECHOS DELICTIVOS QUE INVOLUCREN A PERSONAL POLICIAL Y DEL SERVICIO PENITENCIARIO PROVINCIAL. CREACIÓN EN EL ÁMBITO DEL MINISTERIO PÚBLICO FISCAL</div>
+        <div><strong>Autor</strong></div>
+        <div>José R. Ascárate</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos7.html#ley2-36">237-PL-20</a></a></div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>07/07/2020,	Pág. 2215</div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>23/07/2020,	Pág. 2716</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos10.html#eje1-7">1389 (MS) Expte. nº 50-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>13/08/2020 </div><a name=""></a>
+    </div>
+
+    <div class="sanciones">
+
+        <div class="uno"> <a name="v-249-PL-20"> VETO PARCIAL</a></div>
+        <div><strong>Tema</strong></div>
+        <div>BIENES Y SERVICIOS DE ORIGEN PROVINCIAL, EMPRESAS, PROFESIONALES, TÉCNICOS Y MANO DE OBRA. PREFERENCIA EN SU COMPRA, CONTRATACIÓN Y CONSULTORÍA; Y DEROGACIÓN DE LA LEY N° 6697 (“COMPRE TUCUMÁN”)</div>
+        <div><strong>Autores</strong></div>
+        <div>Tulio E. Caponio – Sandra del V. Orquera – Sandra M. Tirado – Gonzalo D. Monteros – Carlos S. Assan – Mario J. Morof – Carlos F. Gómez</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos7.html#ley2-48">249-PL-20</a></div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>07/07/2020	Pág. 2238 </div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>06/08/2020, Pág. 3209</div>
+        <div><strong> Fecha de promulgación</strong></div>
+        <div>21/08/2020, Ley n° 9287</a></div>
+        <div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>26/08/2020</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos10.html#eje1-11">1447/3 (ME) Expte. nº 54-CPE-20.</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>26/08/2020</div>
+    </div>
+
+    
+        
+    <div class="sanciones">
+
+        <div class="uno"> <a name="v-12-PE-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div>LEY N° 6253 ( LEY DE MEDIO AMBIENTE). MODIFICACIÓN (SANCIONES Y MULTAS)</div>
+        <div><strong>Autor</strong></div>
+        <div>Poder Ejecutivo</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos10.html#eje1-1">12-PE-20</a></div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>09/09/2020	Pág. 3345</div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>09/09/2020, Pág. 3721</div>
+        <div><strong> Fecha de promulgación</strong></div>
+        <div>25/09/2020, Ley n° 9300</div>
+        <div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>29/09/2020</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos11.html#eje1-4">1693/92 (MDP) Expte. nº 62-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>29/09/2020</div>
+    </div>
+
+    <div class="sanciones">
+        <div class="uno"> <a name="v-404-PL-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div>CREMATORIOS DE CADÁVERES Y RESTOS HUMANOS EN LA PROVINCIA. REGULACIÓN DE SU INSTALACIÓN Y FUNCIONAMIENTO</div>
+        <div><strong>Autores</strong></div>
+        <div>a) Tulio E. Caponio<br>
+            b) Nadima del V. Pecci  - Ricardo A. Bussi  -  Mario G. Huesen<br>
+            c) Walter F. Berarducci  -  Raúl. E. Albarracín<br>
+            d) Raúl E. Ferrazzano  -  Eduardo A. Cobos  -  Roberto A. Palina  -  Víctor D. Deiana</div>
+        <div><strong>Expediente</strong></div>
+        <div> <a href="/asuntoslink/asuntos11.html#ley2-28">a) 404-PL-20</a><br>
+            <a href="/asuntoslink/asuntos11.html#ley2-39">b) 415-PL-20</a><br>
+            <a href="/asuntoslink/asuntos11.html#ley2-44">c) 420-PL-20 </a><br>
+            <a href="/asuntoslink/asuntos11.html#ley2-45">d) 421-PL-20</a></div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>a) 01/10/2020,	Pág. 4019 <br>
+            b) 01/10/2020,	Pág. 4049<br>
+            c) 01/10/2020,	Pág. 4059<br>
+            d) 01/10/2020, Pág. 4063</div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>01/10/2020, Pág. 4245</div>
+        <div><strong> Fecha de promulgación</strong></div>
+        <div>22/10/2020, Ley n° 9307</a></div>
+        <div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>23/10/2020</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div> <a href="/asuntoslink/asuntos12.html#eje1-6">1933/14 (MGyJ) Expte. nº 65-CPE-20.</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>23/10/2020</div>
+    </div>
+
+    <div class="sanciones">
+        <div class="uno"> <a name="v-429-PL-20"> VETO PARCIAL</a></div>
+        <div><strong>Tema</strong></div>
+        <div>LEY N° 6253 ( LEY DE MEDIO AMBIENTE). MODIFICACIÓN (SANCIONES Y MULTAS)</div>
+        <div><strong>Autores</strong></div>
+        <div>a) Gerónimo Vargas Aignasse  -  Mario J. Morof  -  Jorge A. Leal  -  José H. Vermal  -  Raúl E. Albarracín<br>
+            b) Gerónimo Vargas Aignasse  -  Mario J. Morof  -  José H. Vermal<br>
+            c) José M. Canelada  -  Raúl E. Albarracín<br>
+            d) José M. Canelada  -  Raúl E. Albarracín</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos12.html#ley2-4"> a) 429-PL-20</a><br>
+            <a href="/asuntoslink/asuntos12.html#ley2-18">b) 443-PL-20</a><br>
+            <a href="/asuntoslink/asuntos12.html#ley2-25">c) 450-PL-20</a> <br>
+            <a href="/asuntoslink/asuntos12.html#ley2-26">d) 451-PL-20</a></div>
+        <div><strong>Fecha de entrada</strong></div>
+        <div>a) 05/11/2020,	Pág. 4467 <br>
+            b) 05/11/2020,	Pág. 4496<br>
+            c) 05/11/2020,	Pág. 4514<br>
+            d) 05/11/2020, Pág. 4516</div>
+        <div><strong> Fecha de sanción</strong></div>
+        <div>26/11/2020, Pág. 5182</div>
+        <div><strong> Fecha de promulgación</strong></div>
+        <div>22/10/2020, Ley n° 9322</a></div>
+        <div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>17/12/2020</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos14.html#eje1-18">2403/14 (MGyJ) Expte. nº 84-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>17/12/2020</div>
+    </div>
+
+    <div class="sanciones">
+        <div class="uno"> <a name="v-494-PL-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div>LEY N° 8933 (CÓDIGO PROCESAL PENAL). MODIFICACIÓN DE LOS ARTÍCULOS 235, 236 Y 237</div>
+        <div><strong>Autores</strong></div>
+        <div>Gerónimo Vargas Aignasse  -  Carlos F. Gómez  -  José H. Vermal</div>
+<div><strong>Expedientes</strong></div>
+        <div><a href="/asuntoslink/asuntos13.html#ley2-13">494-PL-20</a></div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>26/11/2020,	Pág.   4991</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>26/11/2020,	Pág. 5221.</div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>14/12/2020,  Ley n° 9323</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>17/12/2020</div>
+        <div><strong>Decreto del Veto </strong></div>
+        <div> <a href="/asuntoslink/asuntos14.html#eje1-19"> 2404/14  (MGYJ) Expediente nº 85-CPE-20</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>17/12/2020</div>
+    </div>
+
+    <div class="sanciones">
+        <div class="uno"> <a name="v-473-PL-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div>LEY N° 8933 (CÓDIGO PROCESAL PENAL). MODIFICACIÓN DE LOS ARTÍCULOS 235, 236 Y 237
+        </div>
+        <div><strong>Autores</strong></div>
+        <div>Eduardo A. Cobos - Víctor D. Deiana - Roberto A. Palina - Mario J. Morof.</div>
+<div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos12.html#ley2-48">473-PL-20</a></div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>05/11/2020,	Pág.   4568</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>03/12/2020,	Pág. 5304.</div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>29/12/2020, Ley n° 9351</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+        <div><strong>Decreto del Veto </strong></div>
+        <div> <a href="/asuntoslink/asuntos15.html#eje1-8"> 2602/07  (MS) Expte. nº 89-CPE-20.</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+    </div>
+
+    <div class="sanciones">
+
+        <div class="uno"> <a name="v-475-PL-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div> SERVICIO DE TRANSPORTE PRIVADO A TRAVÉS DE PLATAFORMAS ELECTRÓNICAS. REGULACIÓN</div>
+        <div><strong>Autores</strong></div>
+        <div>Raúl E. Albarracín  -  Walter F. Berarducci</div>
+        <div><strong>Expediente</strong></div>
+        <div><a href="/asuntoslink/asuntos12.html#ley2-50">475-PL-20</a></div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>05/11/2020	Pág. 4571</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>03/12/2020, Pág. 5328 </div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>29/12/2020, Ley n° 9354</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos15.html#eje1-7">2603/7 (MS) Expte. nº 88-CPE-20.</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+    </div>
+
+    <div class="sanciones">
+
+        <div class="uno"> <a name="v-478-PL-20"></a> VETO PARCIAL</div>
+        <div><strong>Tema</strong></div>
+        <div>LEY Nº 6210 (BASES PARA LA COORDINACIÓN, PLANEAMIENTO, REGULACIÓN Y CONTROL DEL TRANSPORTE PÚBLICO DE PASAJEROS).  MODIFICACIÓN DE LOS ARTÍCULOS</div>
+        <div><strong>Autores</strong></div>
+        <div>a) Víctor D. Deiana  -  Tulio E. Caponio  -  Mario J. Morof  .-  Raúl E. Ferrazzano  -  Eduardo A. Cobos. <br>
+            b) Raúl E. Albarracín  -  Walter F . Berarducci.
+        </div>
+        <div><strong>Expedientes</strong></div>
+        <div><a href="/asuntoslink/asuntos12.html#ley2-53">a) 478-PL-20</a><br>
+                <a href="/asuntoslink/asuntos13.html#ley2-6">b) 487-PL-20</a>
+        </div>
+<div><strong>Fecha de entrada</strong></div>
+        <div>a)  05/11/2020, Pág. 4578 <br>
+            b)  03/12/2020, Pág. 4966.</div>
+<div><strong> Fecha de sanción</strong></div>
+        <div>03/12/2020, Pág.  5345</div>
+<div><strong>Fecha de Promulgación</strong></div>
+        <div>19/12/2020	- Ley n° 9352</div>
+<div><strong>Fecha de Publicación en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+        <div><strong>Decreto del Veto</strong></div>
+        <div><a href="/asuntoslink/asuntos15.html#eje1-9">2617/7 (MS) Expte. nº 90-CPE-20.</a></div>
+        <div><strong>Fecha de Publicación del Veto en el Boletín Oficial</strong></div>
+        <div>05/01/2021</div>
+    </div>
+</main>
+
+<div class="position-relative ">
+    <footer class="primerpie_pag mt-5 ">
+     <ul>
+         <li><a href="https://www.instagram.com/legislaturatucuman?igsh=MTJ2cm1ubG9heXozOA"><i class="bi bi-instagram"></i></a></li>
+         <li><a href="https://www.facebook.com/profile.php?id=61552602646020"><i class="bi bi-facebook"></i></a></li>
+         <li><a href="https://x.com/LegislaturaT?t=iHA1doB8nLAUovEn8SL4Q&s=09"><i class="bi bi-twitter-x"></i></a></li>
+         <li><a href="https://wa.me/5493816114185" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+         <li><a href="https://www.youtube.com/channel/UCAAEMVW-oPg4FnIYBNfjVCQ" target="_blank"><i class="bi bi-youtube"></i></a></li>
+     </ul>
+
+  </footer>
+  <div class="container-fluid segunpie_pag">
+   <div class="row w-100">
+     <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+       <ul>
+         <h4>Institución</h4>
+         <li><a href="#">Quienes somos</a></li>
+         <li><a href="#">Misión y visión</a></li>
+         <li><a href="#">Historia</a></li>
+         <li><a href="#">Videos</a></li>
+         <li><a href="#">Imágenes</a></li>
+     </ul>
+     </div>
+     <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+       <ul>
+         <h4>Trámites y Servicios</h4>
+         <li><a href="#">Presentar Proyecto de Ley</a></li>
+         <li><a href="#">Acceso a Documentos</a></li>
+         <li><a href="#">Solicitar Información</a></li>
+     </ul>
+     </div>
+     <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+       <ul>
+         <h4>Contacto</h4>
+         <li><a href="#">Oficinas</a></li>
+         <li><a href="#">Atención Ciudadano</a></li>
+         <li><a href="#">Redes Sociales</a></li>
+         <li><a href="#"></a>Ubicación</li>
+     </ul>
+     </div>
+     <div class="col-sm-12 col-md-6 col-xl-3 text-center text-md-start">
+       <ul>
+         <h4>Constitución Provincial</h4>
+         <li><a href="#">Leyes</a></li>
+         <li><a href="#">Vetos</a></li>
+         <li><a href="#">Legisladores</a></li>
+     </ul>
+     </div>
+   </div>
+ </div>
+  <footer class="tercerpie_pag">
+     <a href="#">&copy;Estrategias_Páginas_JD</a>
+     <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+  </footer>
+ </div>
+ 
+<script src="../index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
