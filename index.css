@@ -6,16 +6,62 @@
     margin: 0;
     padding: 0;
 }
-/*margin top del main*/
+.contenido-diario{
+    margin-top: 30px;
+}
 .main-top{
     padding-top: 7%;
 }
-/*height del main de cuadro de sesiones*/
 .altura-contenido-cuadro{
-    width: 80%;
-    padding: 10% 5% 0;
+    margin-left: 5%;
+    padding: 10% 0;
     min-height: 100vh;
+    img{
+        height: 180px;
+
+    }
 }
+.dos {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  .titulos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  .titulos h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  .titulos h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .borde {
+    border-bottom: 2px solid #007bff;
+    margin: 20px 0;
+  }
+  .presentes a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .presentes a:hover {
+    text-decoration: underline;
+  }
+  .go-sumario a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .go-sumario a:hover {
+    background-color: #0056b3;
+  }
+/*-------------------*/
 .custom-link {
     font-family: 'Frank Ruhl Libre', sans-serif;
     font-size: 1.2em;
@@ -43,16 +89,19 @@
 }
 .altura-header{
     position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 6000;
+    z-index: 1000;
 }
 .principal-contenido{
     height: 100%;
 }
+.z-index-navbar{
+    z-index: 3000;
+}
 .color-bg-navbar{
     background-color: brown;
 }
-/* Estilo principal para el contenedor */
    .slider-container {
     position: absolute;
     width: 100%;
@@ -70,8 +119,6 @@
         text-shadow: 2px 2px 2px rgb(196, 159, 159);
     }
   }
-
-  /* Imágenes del slider */
   .slider-image {
     position: fixed;
     top: 10%;
@@ -81,14 +128,10 @@
     object-fit: cover;
     transition: opacity 3s ease, filter 3s ease; 
   }
-
-  /* Para la segunda imagen, que está oculta inicialmente */
   .slider-image.hidden {
     opacity: 0;
     filter: blur(10px); 
   }
-
-  /* Contenido que aparece sobre las imágenes */
   .slider-content {
     position: absolute;
     top: 10%;
@@ -98,23 +141,14 @@
     z-index: 10; 
     text-align: center;
   }
-  
-/*tamaño de los link del navbar*/
-
 .navbar-nav .nav-link {
     padding: 0;
     margin: 0;
     font-size: 18px; 
 }
-
-/*main*/
-
-/*Dropdown de opciones de los tomos*/
-
 .drop-tomos::-webkit-scrollbar{
     scroll-behavior: smooth;
 }
-
 .drop-none-block div{
     width: 100%;
     img{
@@ -122,11 +156,9 @@
         width: 450px;
     }
 }
-
 .drop-none-block:hover div img{
     display: block;
 }
-
 .color-drop{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 45%);
@@ -143,31 +175,19 @@
     right: 30%;
     top: 30%;
 }
-
 .image-container img {
     width: 500px;
     display: none;
 }
-/*margin top carousel*/
-
 .top-carousel{
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 10%;
 }
-
-/*imagen carousel*/
-
 .imagen-carousel{
     width: 35%;
 }
-
-
-
-
-/*espacio para chatear*/
-
 .talk_me{
     position: fixed;
     bottom: 1%;
@@ -176,16 +196,13 @@
     transition: all .8s;
     z-index: 2000;
 }
-
 .talk_me form{
     display: none;
 }
-
 .talk_me:hover form{
     display: block;
     float: right;
 }
-
 .talk_me p{
     text-align: center;
     text-shadow: 1px 1px 1px rgb(14, 14, 14);
@@ -194,9 +211,6 @@
     background-color: rgb(33, 200, 33);
     border-radius: 24px;
 }
-
-/*------------------*/
-
 .img_tomos div nav{
     margin-top: 5%;
     margin-left: 4%;
@@ -262,19 +276,15 @@
     border-radius: 50%;
     padding: 1%;
 }
-/*logo principal*/
 .tamaño-img img{
     width: 15%;
 }
-/*imagenes */
-
 picture{
     position: fixed;
     top: 4%;
     width: 100%;
     z-index: 3000;
 }
-
 .imagenprincipal{
     position: fixed;
     width: 100%;
@@ -283,14 +293,11 @@ picture{
     justify-content: center;
     align-items: center;
     z-index: 2000;
-   
 }
-
 .imagenprincipal img{
     width: 100%;
     z-index: 1000;
 }
-
 .fondocolor{
     position: absolute;
     background: rgb(2,0,36);
@@ -299,15 +306,12 @@ picture{
     width: 100%;
     transition: all .5s;
 }
-
-
 .cuadrotomo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30%;
 }
-
 .cuadrotomo div{
     opacity: .7;
     background-image: url(/imagenescudo/booksantique.jpg);
@@ -321,7 +325,6 @@ picture{
     margin-bottom: 20%;
     transition: all .10s;
 }
-
 .cuadrotomo div:hover{
     background-image: url(/imagenescudo/laptop.jpg);
     transition: all .5s;
@@ -330,7 +333,6 @@ picture{
     border-left: 3px solid red;
     border-top:  1px solid red;
 }
-
 .cuadrotomo div a {
     color: rgb(255, 200, 0);
     font-weight: bolder;
@@ -340,32 +342,21 @@ picture{
     padding: 20%;
     font-size: .8em; 
 }
-
 .cuadrotomo div a h3{
     color: white;
     text-shadow: 2px 2px 2px red;
     padding: 10%;
     font-size: 1.1em;
 }
-
 .imagenprincipal img{
     width: 40%;
 }
-
-/*---------------------------------------------------------*/
-
 .primerpie_pag {
-    /*background-color: rgba(255, 255, 0, 0.201);
-    position: absolute;
-    bottom: 0;
-    width: 100%;*/
-
     height: 8rem;
     z-index: 1000;
     transition: all .8s;
     padding: 0;
 }
-
 .primerpie_pag ul{
     display: flex;
     flex-direction: column;
@@ -374,14 +365,12 @@ picture{
     margin-top: 3%;
     transition: all .8s;
 }
-
 .primerpie_pag:hover{
     transition: all .5s;
     background: rgb(0,212,255);
     background: linear-gradient(90deg, rgba(0,212,255,1) 4%, rgba(9,9,121,1) 90%, rgba(2,0,36,1) 100%);
     height: 10rem;
 }
-
 .primerpie_pag ul li{
     width: 50%;
     transition: all .8s;
@@ -390,12 +379,10 @@ picture{
     margin-left: 5%;
     margin-top: 4px;
 }
-
 .primerpie_pag ul li:hover{
     padding-left: 20%;
     border-bottom: 2px solid rgb(171, 37, 37); 
 } 
-
 .primerpie_pag ul li a{
     text-decoration: none;
     color: black;
@@ -403,7 +390,6 @@ picture{
 .primerpie_pag ul li a i{
     font-size: 1.5em;
 }
-/*--------------------*/
 .segunpie_pag{
     display: flex;
     justify-content: space-around;
@@ -411,33 +397,25 @@ picture{
     background-color: rgba(0, 0, 0, 0.784);
     transition: all .6s;
 }
-
 .segunpie_pag:hover{
     background-color: black;
 }
-
 .segunpie_pag ul li a{
     color: rgba(255, 255, 0, 0.718);
     text-decoration: none;
 }
-
 .segunpie_pag ul h4{
     color: white;
     padding: 5%;
     margin-bottom: 20px;
 }
-
 .segunpie_pag ul li{
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
 .segunpie_pag ul{
     list-style: none;
 }
-
-/************************/
-
 .tercerpie_pag{
     margin-bottom: 0;
     background-color: azure;
@@ -450,61 +428,6 @@ picture{
     font-weight: 900;
 }
 
-/*cuadro de sesiones css
-
-.sesiones{
-    width: 50%;
-    
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 
-    10% 20% 15% 35% 20%;
-    grid-template-rows: fit-content(40%);
-    
-    background-image: linear-gradient(to bottom left,  rgb(97, 154, 207) -60%, #fcfcfc 100%);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
-
-    margin-bottom: 30%;
-    box-shadow: 0px 0px 8px rgb(72, 67, 67);
-}
-
-
-
-
-.sesiones div{
-    border: 1px solid #8f8f8f;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sesiones a{
-    text-decoration: none;
-    color: black;
-    transition: all .5s;
-
-}
-
-.sesiones div:hover a{
-    padding-left: 15px;
-    text-shadow: 1px 4px 5px rgb(9, 8, 8);
-    color: #fcfcfc;
-    font-size: 1.3em;
-}
-.margen-sesiones{
-    padding-top: 13%;
-    height: 400px;
-    overflow: auto;     
-}
-.margen-sesiones::-webkit-scrollbar{
-    scroll-behavior: smooth;
-}
-.margen-sesiones::-webkit-scrollbar {
-    display: none; 
-  }*/
 .carousel-ubicacion{
     position: fixed;
     top: 18%;
@@ -514,13 +437,14 @@ picture{
     
 } .sidebar {
     position: fixed;
-    top: 18%;
+    top: 19%;
     left: -200px;
     width: 250px;
     height: 100%;
     background-image: linear-gradient(to bottom  right, rgb(97, 154, 207) -60%, #fcfcfc 100%);
     padding-top: 20px;
     padding-left: 10px;
+    z-index: 2000;
   }
   .sidebar:hover{
     left: 0;
@@ -547,9 +471,11 @@ picture{
 
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
+    .contenido-diario{
+        margin-top: 70px;
+    }
     .altura-contenido-cuadro{
-        width: 80%;
-        padding-top: 27%;
+        margin-top: 150px;
         margin-left: 10%;
     }
     .sidebar{
@@ -605,10 +531,11 @@ picture{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px){
+    .contenido-diario{
+        margin-top: 80px;
+    }
     .altura-contenido-cuadro{
-        width: 80%;
-        padding-top: 15%;
-        margin-left: 10%;
+        margin-top: 150px;
     }
     .sidebar{
         top: 18%;
