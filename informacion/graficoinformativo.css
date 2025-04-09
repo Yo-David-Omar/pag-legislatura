@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Russo+One&family=Tilt+Warp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(3, 3, 79);
+}
+
+
+/*opciones barra arriba*/
+ 
+.borde1{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 20%;
+    z-index: 500;
+}
+.bde{
+    border-bottom: 1px double rgb(246, 246, 240);
+    
+    width: 40%;
+}
+.borde1 a{
+    color: rgb(172, 176, 153);
+    text-decoration: none;
+    display: none;
+}
+.borde1:hover div a{
+    display: block;
+    border-left: .2px solid rgb(1, 0, 0);
+    border-bottom: .2px solid rgb(1, 0, 0);
+    border-radius: -24px;
+    color: brown;
+    background: #fcfcfc;
+}
+.borde1 div a:hover p{
+    padding-left: 12%;
+    color: rgb(46, 36, 36);
+}
+.borde1 div p{
+    transition: all .5s;
+    padding: 3%;
+}
+.borde1 .bde{
+    border-bottom: 4px solid rgb(241, 255, 87);
+    margin: 1%;
+    width: 7%;
+    margin-left: 35%;
+   
+}
+
+/*cuadro principal representativo*/
+
+.cuadro4partes{
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cuadro4partes div{
+    margin-bottom: 3%;
+}
+.uno{
+    text-align: center;
+    background-color: #d4cdad;
+    padding: 1%;
+    border-radius: 10px;
+}
+.uno a {
+    text-decoration: none;
+    color: rgb(24, 15, 58);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.uno:hover{
+    background-color: aliceblue;
+}
+.uno h4{
+    color: #85ba91;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px 3px #113a36;
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+}
+    
+
+.uno:hover a{
+    color: #364675;
+}
+.dos{
+    width: 100px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,219,217,0) 55%);
+    
+}
+.dos img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.tres{
+    text-align: center;
+    background-color: #d4cdad;
+    padding: 1%;
+    border-radius: 10px;
+}
+.tres:hover{
+    background-color: aliceblue;
+}
+.tres a:hover{
+    color: #25857d;
+}
+.tres a{
+    text-decoration: none;
+    color: rgb(24, 15, 58);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------------------------*/
+
+.cen{
+    display: flex;
+    justify-content: center;
+}
+
+
+.barra{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+   
+}
+
+.centrarpag{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-image: url(/imagenes/libroblanconegro.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 900px;
+    border-bottom-left-radius: 900px;
+    border-left: 40px solid #25857d;
+    border-right: 40px solid #98c3a1;
+    border-bottom: 40px solid #d4cdad;
+    z-index: 500;
+}
+.opciones{
+    position: absolute;
+    width: 10%;
+    right: 0;
+    top: 5%;
+}
+.opciones div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    margin-top: 4%;
+    transition: all .5s;
+}
+.opciones div p{
+    text-align: center;
+    width: 10%;
+    height: 40%;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.opciones div p span{
+    margin-top: 5%;
+    color: darkgray;
+    height: 250px;
+    display: none;
+    transition: all .5s;
+    text-align: right;
+    border: 5px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 5%;
+    margin-right: 10px;
+    background-color: aliceblue;
+    font-family: "Russo One", sans-serif;
+}
+.opciones div p:hover span{
+    display: block;
+    float: right;
+    padding: 100%;
+    
+} 
+.color1 p{
+    background-color: chocolate;
+    border: 3px solid rgb(220, 217, 217);
+}
+
+.color2 p{
+    background-color: goldenrod;
+    border: 3px solid rgb(101, 86, 86);
+}
+.color3 p{
+    background-color: cyan;
+    border: 3px solid rgb(135, 116, 116);
+}
+/*--------------------------*/
+
+.opciones1{
+    position: absolute;
+    width: 10%;
+    right: 0;
+    top: 10%;
+}
+.opciones1 div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    margin-top: 4%;
+    transition: all .5s;
+}
+.opciones1 div p{
+    text-align: center;
+    
+    width: 10%;
+    height: 40%;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.opciones1 div p span{
+    color: darkgray;
+    height: 180px;
+    display: none;
+    transition: all .5s;
+    text-align: right;
+    border: 5px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 5%;
+    margin-right: 10px;
+    background-color: aliceblue;
+    font-family: "Russo One", sans-serif;
+}
+.opciones1 div p:hover span{
+    display: block;
+    float: right;
+    padding: 100%;
+} 
+/*-------------------------------*/
+.principal1{
+    position: absolute;
+    left: 5%;
+    transition: all .8em;
+    width: 3%;
+    z-index: 400;
+}
+.principal1 div{
+    transition: all .5s;
+    width: 100%;
+    
+}
+.principal1 div h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid rgb(195, 192, 192);
+    z-index: 300;
+    
+}
+.principal1:hover div h3 p{
+    margin-top: 50%;
+}
+.principal1:hover div{
+    background-color: rgb(171, 195, 219);
+}
+.tituloflex{
+    transition: all .5s;
+}
+
+#par1{
+    color: white;
+}
+/*imagenes*/
+.scroll{
+    width: 50%;
+    
+}
+
+.info{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+.info div{
+    width: 13.5%;
+}
+.primerlugar{
+    transition: all .5s;
+}
+.info img{
+    transition: all .8s;
+    width: 410px;
+    height: 220px;
+    border-bottom-left-radius: 80px; 
+   
+}
+.primerlugar:hover{
+    z-index: 400;
+    padding-left: 8%;
+}
+.primerlugar a h1{
+    top: 0;
+    position: absolute;
+    color: white;
+}
+
+.clase3{
+    margin-top: 30px;
+    margin-left: 4%;
+    padding-bottom: 140px;
+    width: 90%;
+    height: 100vh;
+    height: 110px;
+}
+.medio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+}
+
+.medio div{
+    transition: all .5s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+.circulo1 ul{
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    padding: 25%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; 
+    border-bottom: 1px solid white;
+    background-color:  rgb(3, 3, 79);
+    transition: all .5s;
+    font-size: .8em;
+}
+
+.circulo2 ul{
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    padding: 25%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; 
+    border-left: 1px solid white;
+    background-color:  rgb(3, 3, 79);
+    transition: all .5s;
+    font-size: .8em;
+}
+.circulo3 ul{
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    padding: 25%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; 
+    border-top: 1px solid white;
+    background-color:  rgb(3, 3, 79);
+    transition: all .5s;
+    font-size: .8em;
+}
+
+.circulo1 ul li{
+    margin: 5% 0 0 6%;
+    margin-inline-start: 9%;
+}
+.circulo1 h2{
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+.circulo1 h2 a{
+    text-decoration: none;
+    color: white;
+}
+.circulo1:hover ul{
+    background-image: url(/imagenes/casadegobotra.jpg);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    
+}
+.circulo2 ul li{
+    margin: 5% 0 0 6%;
+    margin-inline-start: 9%;
+}
+.circulo2 h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+.circulo2 h2 a{
+    text-decoration: none;
+    color: white;
+}
+.circulo2:hover ul{
+    background-image: url(/imagenes/edificio.jpg);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+.circulo3 ul li{
+    margin: 5% 0 0 6%;
+    margin-inline-start: 9%;
+}
+.circulo3 h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+.circulo3 h2 a{
+    text-decoration: none;
+    color: white;
+}
+.circulo3:hover ul{
+    background-image: url(/imagenes/PoderJudicial.webp);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+.mdio{
+    margin: 10% 0 0 5%;
+    width: 10%;
+    background-image: url(/imagenes/flecha.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-weight: bolder;
+}
+/*--------------------------------*/
+
+.trescolumnas{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.trescolumnas div{
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #a9cac7;
+    box-shadow:5px 5px 10px #25857d;
+    transition: all .5s;
+    border-left: 1px solid black;
+}
+.trescolumnas div:hover{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.trescolumnas div a{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: .6em;
+    transition: all .3s;
+    color: #a9cac7;
+    text-decoration: none;
+}
+.trescolumnas div:hover a{
+    position: relative;
+    color: rgb(62, 45, 60);
+    font-size: .8em;
+}
+/*----------------------------------*/
+/*lateral derecho modo informacion*/
+.treslaterales div{
+    scroll-behavior: smooth;
+}
+.blateral{
+    width: 12%;
+    height: 100px;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #e4e1e1;
+}
+
+.blateral div{
+    margin: 2%;
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 17px);
+    font-size: .9em;
+    text-align: start;
+    
+}
+.blateral div h1{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    border-width: 20%;
+    color: darksalmon;
+    text-align: center;
+   
+}
+.blateral div p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(98, 135, 179);
+    font-size: .8em;
+    padding: 3%;
+    color: brown;
+    text-align: left;
+    
+}
+.blateral div p strong{
+    color: rgb(51, 87, 75);
+}
+/*----------------------------------------------------------------*/
+.blateral1{
+    width: 12%;
+    height: 100px;
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #e4e1e1;
+}
+
+.blateral1 div{
+    margin: 0;
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 17px);
+    
+    font-size: .9em;
+    text-align: start;
+    padding: 8%;
+}
+.blateral1 div h1{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    border-width: 20%;
+    color: darksalmon;
+    text-align: center;
+   
+}
+.blateral1 div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    width: 80%;
+    color: rgb(51, 87, 75);
+    font-weight: bold;
+}
+.blateral1 ul{
+    width: 80%;
+    padding: 3%;
+    text-align: left;
+    font-size: .8em;
+    color: brown;
+    margin-bottom: 5%;
+}
+
+.blateral2{
+    width: 12%;
+    height: 100px;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #e4e1e1;
+}
+
+.blateral2 div{
+    margin: 0;
+    overflow: auto;
+    max-height: 100%;
+    width: calc(100% + 17px);
+    
+    font-size: .9em;
+    text-align: start;
+    padding: 8%;
+}
+.blateral2 div h1{
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    border-width: 20%;
+    color: darksalmon;
+    text-align: center;
+   
+}
+.blateral2 div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    width: 80%;
+    color: rgb(51, 87, 75);
+    font-weight: bold;
+}
+.blateral2 ul{
+    width: 80%;
+    padding: 3%;
+    text-align: left;
+    font-size: .8em;
+    color: brown;
+    margin-bottom: 5%;
+}
+
+/*----------------------------------------------------------------*/
+/*parte informativa lado derecho de la pantalla*/
+
+.informacion{
+    background-color: darkblue;
+    position: fixed;
+    width: 20%;
+    height: 30px;
+    top: 0;
+    right: -1%;
+    transition: all 1s;
+    overflow: auto;
+    border-left: 4px solid yellow;
+}
+.informacion:hover{
+    right: 0;
+    height: 300px;
+}
+.informacion div{
+    overflow: hidden;
+    max-height: 100%;
+    width: calc(90% + 18px);
+}
+.informacion p{
+    color: white;
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-right: 5px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .9em;
+}
+.informacion p span{
+    color: darkblue;
+}
+.informacion:hover p{
+    color: white;
+}
+.informacion:hover span{
+    color: red;
+}
+.informacion strong{
+    border-bottom: 1px solid darkblue;
+}
+.informacion:hover div p strong{
+    border-bottom: 1px solid white;
+    color: #ceb3b3;
+}
+
+/*responsive tapa nueva*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+    .centrarpag{
+        min-width: 40%;
+    }
+}
